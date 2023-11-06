@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon-32x32.png" />
+        <title>Age calculator</title>
+    </head>
+    <body>
+        <main>
+            <div class="form">
+                <div class="fieldset">
+                    <div class="inputs">
+                        <label for="day" id="dayLabel" class="dateLabel">DAY</label>
+                        <input type="number" class="dateInput" id="day" name="day" placeholder="DD" />
+                        <p class="error" id="dayMissing">This field is required</p>
+                        <p class="error" id="dayInvalid">Must be a valid day</p>
+                    </div>
+                    <div class="inputs">
+                        <label for="month" id="monthLabel" class="dateLabel">MONTH</label>
+                        <input type="number" class="dateInput" id="month" name="month" placeholder="MM" />
+                        <p class="error" id="monthMissing">This field is required</p>
+                        <p class="error" id="monthInvalid">Must be a valid month</p>
+                    </div>
+                    <div class="inputs">
+                        <label for="year" id="yearLabel" class="dateLabel">YEAR</label>
+                        <input type="number" class="dateInput" id="year" name="year" placeholder="YYYY" />
+                        <p class="error" id="yearMissing">This field is required</p>
+                        <p class="error" id="yearInvalid">Must be a valid year</p>
+                    </div>
+                </div>
+                <div class="buttonDivider">
+                    <hr />
+                    <button type="button" onclick="setValue()"><img src="assets/img/icon-arrow.svg" /></button>
+                </div>
+            </div>
+            <!-- Calculated age display -->
+            <div class="date">
+                <div>
+                    <p class="number" id="yyyy">--</p>
+                    <p class="text">years</p>
+                </div>
+                <div>
+                    <p class="number" id="mm">--</p>
+                    <p class="text">months</p>
+                </div>
+                <div>
+                    <p class="number" id="dd">--</p>
+                    <p class="text">days</p>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>
